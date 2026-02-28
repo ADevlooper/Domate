@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "build": "echo \"No build step required\"",
     "dev": "nodemon src/server.js",
     "start": "node src/server.js",
     "seed": "node --env-file=.env src/scripts/seedRolesAndPrivileges.js"
