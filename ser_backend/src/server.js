@@ -23,7 +23,7 @@ const app = express();
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://domate-frontend.onrender.com"
+    "https://domate-ow67.onrender.com"
   ],
   credentials: true
 }));
