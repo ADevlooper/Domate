@@ -64,8 +64,8 @@ const Navbar = ({ variant = 'landing', user, loading = false }) => {
 
 
     return (
-        <nav className="fixed top-0 left-0 w-full z-50">
-            <div className="bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 px-6 py-4 flex items-center justify-between ">
+        <nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] md:w-[calc(100%-4rem)] max-w-7xl z-50 transition-all duration-300">
+            <div className="bg-white/90 backdrop-blur-md shadow-lg border border-gray-100 px-6 py-3 flex items-center justify-between rounded-full">
 
                 <div className="flex items-center gap-8">
 
@@ -220,10 +220,9 @@ const Navbar = ({ variant = 'landing', user, loading = false }) => {
                         </div>
                     )}
 
-                    {/* Mobile Actions: Search & Menu */}
                     <div className="md:hidden flex items-center gap-2">
                         {mobileSearchOpen ? (
-                            <div className="absolute inset-0 bg-white z-50 px-4 flex items-center gap-2 animate-in fade-in slide-in-from-top-2 shadow-sm rounded-b-3xl">
+                            <div className="absolute inset-0 bg-white z-50 px-4 flex items-center gap-2 animate-in fade-in slide-in-from-top-2 shadow-lg rounded-full">
                                 <Search className="w-5 h-5 text-gray-500" />
                                 <input
                                     type="text"
